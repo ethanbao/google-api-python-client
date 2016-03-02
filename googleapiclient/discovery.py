@@ -82,15 +82,9 @@ URITEMPLATE = re.compile('{[^}]*}')
 VARNAME = re.compile('[a-zA-Z0-9_-]+')
 DISCOVERY_URI = ('https://www.googleapis.com/discovery/v1/apis/'
                  '{api}/{apiVersion}/rest')
-<<<<<<< HEAD
 V1_DISCOVERY_URI = DISCOVERY_URI
 V2_DISCOVERY_URI = ('https://{api}.googleapis.com/$discovery/rest?'
                     'version={apiVersion}')
-
-=======
-DISCOVERY_URI2 = ('https://{api}.googleapis.com/$discovery/rest?'
-                  'version={apiVersion}')
->>>>>>> 1322355... Fallback to use new discovery uri pattern when the old one fails.
 DEFAULT_METHOD_DOC = 'A description of how to use this function'
 HTTP_PAYLOAD_METHODS = frozenset(['PUT', 'POST', 'PATCH'])
 _MEDIA_SIZE_BIT_SHIFTS = {'KB': 10, 'MB': 20, 'GB': 30, 'TB': 40}
